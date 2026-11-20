@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum - Murogolo Primary School</title>
+<meta name="description" content="Murogolo Primary School serves learners from Grade R to Grade 7 in Ha Muila, Kwaaidraai, Tshitale, Limpopo.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="icon" href="logo.jpg">
+<link rel="stylesheet" href="style.css">
+
+
+<script src="script.js" defer></script>
+
+</head>
+<body class="font-sans text-gray-900">
+<nav class="sticky top-0 z-50 bg-white border-b border-slate-200">
+  <div class="container mx-auto flex items-center justify-between px-4 py-3">
+    <a href="index.html" class="flex items-center gap-3 min-w-0">
+      <img src="logo.jpg" alt="Murogolo Primary School crest" class="h-11 w-11 shrink-0 rounded-lg border border-slate-200 bg-white object-contain p-0.5">
+      <span class="leading-tight min-w-0"><span class="block font-bold text-blue-900 truncate">Murogolo</span><span class="block text-sm text-slate-500 truncate">Primary School</span></span>
+    </a>
+    <div class="flex items-center gap-2">
+      <button type="button" data-theme-toggle class="theme-btn" aria-label="Toggle dark mode" title="Dark mode"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button>
+      <button type="button" id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="sideMenu"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+<div id="menuOverlay" class="menu-overlay" aria-hidden="true"></div>
+<aside id="sideMenu" class="side-menu" aria-label="Site menu" aria-hidden="true">
+  <div class="side-head"><span class="font-bold text-lg">Menu</span><button type="button" id="menuClose" class="menu-btn" aria-label="Close menu"><i class="fas fa-times"></i></button></div>
+  <div class="side-links">
+    <a href="index.html" class="side-link"><i class="fas fa-home"></i>Home</a>
+    <a href="about.html" class="side-link"><i class="fas fa-info-circle"></i>About Us</a>
+    <a href="curriculum.html" class="side-link"><i class="fas fa-book-open"></i>Curriculum</a>
+    <a href="admissions.html" class="side-link"><i class="fas fa-user-graduate"></i>Admissions</a>
+    <a href="donate.html" class="side-link"><i class="fas fa-hand-holding-heart"></i>Donate</a>
+    <a href="contact.html" class="side-link"><i class="fas fa-envelope"></i>Contact</a>
+  </div>
+  <div class="side-foot"><a href="admissions.html" class="side-cta">Apply Now</a></div>
+</aside>
+
+<!-- ===== ACADEMIC CURRICULUM (white + light blue) ===== -->
+<section class="cur-hero" id="curriculum">
+  <div class="cur-wrap">
+    <!-- Page header -->
+    <header class="cur-head">
+      <span class="cur-eyebrow"><i class="fas fa-graduation-cap"></i> CAPS Curriculum</span>
+      <h1>Academic Curriculum</h1>
+      <p>We follow the South African CAPS national curriculum, ensuring a standardized and high-quality education for all learners.</p>
+    </header>
+
+    <!-- Phase switcher (tabs) -->
+    <div class="cur-tabs" role="tablist" aria-label="Curriculum phases">
+      <button class="cur-tab is-active" role="tab" id="tab-foundation" aria-selected="true" aria-controls="panel-foundation" data-phase="foundation">
+        <strong>Foundation Phase</strong><small>Grade R &ndash; 3</small>
+      </button>
+      <button class="cur-tab" role="tab" id="tab-intermediate" aria-selected="false" aria-controls="panel-intermediate" data-phase="intermediate" tabindex="-1">
+        <strong>Intermediate Phase</strong><small>Grade 4 &ndash; 6</small>
+      </button>
+      <button class="cur-tab" role="tab" id="tab-senior" aria-selected="false" aria-controls="panel-senior" data-phase="senior" tabindex="-1">
+        <strong>Senior Phase</strong><small>Grade 7</small>
+      </button>
+    </div>
+
+  </div>
+</section>
+<section class="cur-body">
+  <div class="cur-wrap">
+    <!-- Foundation Phase -->
+    <div class="cur-panel is-active" role="tabpanel" id="panel-foundation" aria-labelledby="tab-foundation">
+      <p class="cur-focus">Focus on basic literacy, numeracy, and life skills to build a strong base.</p>
+      <div class="cur-grid">
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-book"></i></span><h3>Home Language</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-globe"></i></span><h3>First Additional Language</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-calculator"></i></span><h3>Mathematics</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-palette"></i></span><h3>Life Skills</h3><p>Creative Arts &amp; PE</p></article>
+      </div>
+    </div>
+
+    <!-- Intermediate Phase -->
+    <div class="cur-panel" role="tabpanel" id="panel-intermediate" aria-labelledby="tab-intermediate" hidden>
+      <p class="cur-focus">Expanding knowledge and introducing more specific subjects.</p>
+      <div class="cur-grid">
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-book"></i></span><h3>Home Language</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-globe"></i></span><h3>First Additional Language</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-calculator"></i></span><h3>Mathematics</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-flask"></i></span><h3>Natural Sciences &amp; Technology</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-atlas"></i></span><h3>Social Sciences</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-heart"></i></span><h3>Life Skills</h3></article>
+      </div>
+    </div>
+
+    <!-- Senior Phase -->
+    <div class="cur-panel" role="tabpanel" id="panel-senior" aria-labelledby="tab-senior" hidden>
+      <p class="cur-focus">Preparing learners for high school with more specialised subjects.</p>
+      <div class="cur-grid">
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-book"></i></span><h3>Home Language</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-globe"></i></span><h3>First Additional Language</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-calculator"></i></span><h3>Mathematics</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-microscope"></i></span><h3>Natural Sciences</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-users"></i></span><h3>Social Sciences</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-cogs"></i></span><h3>Technology</h3></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-chart-line"></i></span><h3>Economic and Management Sciences</h3><p>EMS</p></article>
+        <article class="cur-card"><span class="cur-ico"><i class="fas fa-compass"></i></span><h3>Life Orientation</h3></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="journey" class="scroll-mt-16">
+  <!-- Beyond the classroom: mosaic -->
+  <section id="activities" class="activities-section text-white scroll-mt-16">
+  <div class="container mx-auto px-6 py-16">
+    <div class="activities-heading">
+      <p class="activities-eyebrow">Beyond the classroom</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold">Learn, move and grow together</h2>
+      <p class="activities-intro">Illustrative photos show the kinds of sport and creative activities that help learners build confidence. Availability depends on resources and season.</p>
+    </div>
+    <div class="activity-grid">
+      <article class="activity-card activity-card-featured">
+        <img src="soccer.jpg" alt="Primary school learners playing soccer on a grassy field" loading="lazy" decoding="async">
+        <div class="activity-card-caption"><h3>Soccer</h3><p>Teamwork, fitness and fun</p></div>
+      </article>
+      <article class="activity-card">
+        <img src="netball.jpg" alt="Primary school learners playing netball outdoors" loading="lazy" decoding="async">
+        <div class="activity-card-caption"><h3>Netball</h3><p>Pass, shoot, score</p></div>
+      </article>
+      <article class="activity-card">
+        <img src="athletics.jpg" alt="Primary school learners running a race on the school field" loading="lazy" decoding="async">
+        <div class="activity-card-caption"><h3>Athletics</h3><p>Run, jump, throw</p></div>
+      </article>
+      <article class="activity-card activity-card-wide">
+        <img src="speech.jpg" alt="A learner speaking to classmates at a school event" loading="lazy" decoding="async">
+        <div class="activity-card-caption"><h3>Speech &amp; Performance</h3><p>Confidence on stage</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="sf-notice">
+    <div class="sf-wrap sf-notice-in">
+      <div><p class="sf-kicker">LEARNING • COMMUNITY • POSSIBILITY</p><h3>Every learner deserves a strong start.</h3><p>Discover learning at Murogolo Primary School, serving the Ha Muila community.</p></div>
+      <div class="cta-btns"><a href="admissions.html" class="pill pill-solid"><i class="fas fa-user-plus" aria-hidden="true"></i> Admissions information</a><a href="contact.html" class="pill pill-outline"><i class="fas fa-location-dot" aria-hidden="true"></i> Find the school</a></div>
+    </div>
+  </div>
+  <div class="sf-wrap"><div class="sf-grid">
+    <div class="sf-brand"><a href="index.html" class="sf-logo"><img src="logo-crest.png" alt="Murogolo Primary School crest"><span>Murogolo<br><small>Primary School</small></span></a><p>Building a strong foundation for future leaders through quality public education in Ha Muila.</p><p class="sf-school-type">Public school • Grade R–7 • Vhembe District</p></div>
+    <nav aria-label="Footer navigation" class="sf-col"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About the school</a></li><li><a href="curriculum.html">Curriculum</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="donate.html">Support the school</a></li><li><a href="contact.html">Contact & directions</a></li></ul></nav>
+    <div class="sf-col"><h4>Visit Murogolo</h4><p class="sf-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Ha Muila, Kwaaidraai, Tshitale, Makhado, Limpopo Province</span></p><p class="sf-item"><i class="fas fa-envelope-open-text" aria-hidden="true"></i><span>Postal address: P.O. Box 354, Muila</span></p><a class="sf-map-link" href="contact.html">View location and directions <span aria-hidden="true">→</span></a></div>
+    <div class="sf-col"><h4>School hours</h4><ul class="sf-hours"><li><i class="far fa-clock" aria-hidden="true"></i><span>Monday – Thursday</span><b>07:30 – 14:30</b></li><li><i class="far fa-clock" aria-hidden="true"></i><span>Friday</span><b>07:30 – 13:00</b></li><li><i class="far fa-calendar-times" aria-hidden="true"></i><span>Weekends</span><b>Closed</b></li></ul><p class="sf-contact-note">Direct phone and email details have not been supplied on this website.</p></div>
+  </div></div>
+  <div class="sf-bottom"><div class="sf-wrap sf-bottom-in"><p>© <span data-current-year>2026</span> Murogolo Primary School. All rights reserved.</p><p>Ha Muila • Kwaaidraai • Limpopo</p></div></div>
+  <button type="button" class="sf-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+</footer>
+</body>
+</html>
